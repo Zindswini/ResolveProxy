@@ -9,8 +9,6 @@ mkdir proxy; dir *.* | foreach-object { $newname = $_.Name.Remove($_.Name.Length
 -vf "scale=1280x720,fps=60" `
 -profile:v dnxhr_lb `
 proxy\$newname 
-
 }
-
 
 pause
