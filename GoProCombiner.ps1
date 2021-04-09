@@ -4,6 +4,7 @@ Get-Content tocombine.txt | out-file -encoding ascii tocombineutf.txt
 .\bin\ffmpeg.exe `
 -f concat `
 -safe 0 `
+-ignore_unknown `
 -i "tocombineutf.txt" `
 -acodec copy `
 -vcodec copy `
